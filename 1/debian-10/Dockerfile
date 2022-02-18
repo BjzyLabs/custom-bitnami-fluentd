@@ -25,7 +25,7 @@ ENV BITNAMI_APP_NAME="fluentd" \
 
 EXPOSE 5140 24224
 # Install custom plugins
-RUN fluent-gem install 'fluent-plugin-opensearch' 'fluent-plugin-kafka' 'fluent-plugin-prometheus' 'fluent-plugin-systemd' 'fluent-plugin-grafana-loki' 'fluent-plugin-vmware-loginsight' 'fluent-plugin-macos-log'
+RUN fluent-gem install 'fluent-plugin-opensearch' 'fluent-plugin-kafka' 'fluent-plugin-prometheus' 'fluent-plugin-systemd' 'fluent-plugin-grafana-loki' 'fluent-plugin-vmware-loginsight' 'fluent-plugin-macos-log' 'fluent-plugin-string-scrub'
 
 WORKDIR /opt/bitnami/fluentd
 USER 1001
