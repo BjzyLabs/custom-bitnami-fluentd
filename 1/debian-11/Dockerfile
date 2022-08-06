@@ -24,7 +24,7 @@ ENV APP_VERSION="1.15.0" \
 
 EXPOSE 5140 24224
 # Install custom plugins
-RUN fluent-gem install 'fluent-plugin-opensearch:1.0.7' 'fluent-plugin-kafka' 'fluent-plugin-prometheus' 'fluent-plugin-systemd' 'fluent-plugin-grafana-loki' 'fluent-plugin-vmware-loginsight' 'fluent-plugin-macos-log' 'fluent-plugin-string-scrub'
+RUN fluent-gem install 'fluent-plugin-opensearch:1.0.7' 'fluent-plugin-kafka' 'fluent-plugin-prometheus' 'fluent-plugin-systemd' 'fluent-plugin-grafana-loki' 'fluent-plugin-vmware-loginsight' 'fluent-plugin-macos-log' 'fluent-plugin-string-scrub' 'fluent-plugin-metrics-cmetrics' 'fluent-plugin-cmetrics' 'fluent-plugin-calyptia-monitoring'
 
 WORKDIR /opt/bitnami/fluentd
 USER 1001
